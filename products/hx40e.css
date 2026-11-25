@@ -229,3 +229,7 @@ body{font-style:normal}
 
 /* Approved white-background strap photo: preserve original color and contrast */
 .hx-details .hx-acc-card:has(img[alt="Ремешок на руку"]) .hx-acc-photo img{filter:none;transform:none;object-fit:contain}
+
+/* Included items without a manufacturer part number */
+.hx-details .hx-acc-info--name-only{display:flex;align-items:flex-start;min-height:100px}
+.hx-details .hx-acc-info--name-only strong{font-weight:700;font-size:17px;line-height:1.5}
