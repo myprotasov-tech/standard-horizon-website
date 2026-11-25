@@ -22,3 +22,10 @@
 .brand-hero h1{font-size:clamp(32px,4vw,48px)!important;line-height:1.2!important;margin:0!important}
 @media(max-width:640px){.brand-hero{padding:64px 0 60px!important;background-position:center,62% center!important}}
 @media(max-width:560px){.brand-hero{padding:35px 0!important}}
+
+/* Corrected catalog-style About banner: existing, verified catalog photograph. */
+.brand-hero{height:auto!important;min-height:0!important;padding:80px 0 76px!important;display:block!important;background:linear-gradient(90deg,rgba(0,28,51,.90) 0%,rgba(0,32,55,.72) 36%,rgba(0,36,60,.12) 77%),url("assets/images/background-0.jpg") center 54%/cover no-repeat!important}
+.brand-hero::before,.brand-hero::after{display:none!important;content:none!important}
+.brand-hero-content{width:min(1200px,calc(100% - 48px))!important;margin:0 auto!important;padding:0!important}
+.brand-hero h1{margin:0!important;color:#fff!important;font-size:clamp(32px,4vw,48px)!important}
+@media(max-width:640px){.brand-hero{padding:64px 0 60px!important}}
