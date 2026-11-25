@@ -206,3 +206,8 @@ body{font-style:normal}
 /* Accessory cards: keep product photos on white, distinguish description area */
 .hx-details .hx-acc-card{background:#fff}
 .hx-details .hx-acc-info{background:#f1f5f9;border-top:1px solid #e5eaf0}
+
+/* Standard Horizon palette: neutral description panels, red accent; no turquoise */
+.hx-details .hx-acc-info{background:#f5f6f8;border-top:2px solid #e30620}
+.hx-details .hx-acc-info strong{color:#202b38}
+.hx-details .hx-acc-info p{color:#4e5865}
