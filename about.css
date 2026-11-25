@@ -29,3 +29,7 @@
 .brand-hero-content{width:min(1200px,calc(100% - 48px))!important;margin:0 auto!important;padding:0!important}
 .brand-hero h1{margin:0!important;color:#fff!important;font-size:clamp(32px,4vw,48px)!important}
 @media(max-width:640px){.brand-hero{padding:64px 0 60px!important}}
+
+/* Match Catalog banner's total height, including its subtitle line, without adding text to About. */
+.brand-hero{padding:80px 0 114px!important;height:auto!important}
+@media(max-width:640px){.brand-hero{padding:64px 0 98px!important}}
