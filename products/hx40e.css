@@ -202,3 +202,7 @@ body{font-style:normal}
 
 /* White accessory image panels: override original turquoise-tinted gradient */
 .hx-details .hx-acc-photo{background:#fff!important}
+
+/* Accessory cards: keep product photos on white, distinguish description area */
+.hx-details .hx-acc-card{background:#fff}
+.hx-details .hx-acc-info{background:#f1f5f9;border-top:1px solid #e5eaf0}
