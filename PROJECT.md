@@ -45,7 +45,7 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 - Catalog header used a separate logo asset and catalog-only geometry overrides. Updated `catalog/index.html` in `main` (commit `ee4ea90`) to use the exact same embedded logo as the homepage and removed catalog-only logo geometry CSS.
 - **2026-11-25 follow-up:** Source comparison found homepage-only header typography and spacing overrides missing from catalog. Added matching header rules to `catalog/index.html` in `main` (commit `dd9bcd7`).
 - **2026-11-25 additional fix:** Found catalog desktop dealer button was 13px/12×14px while homepage uses 15px/15×20px; aligned catalog button sizing and navigation line-height/color in `catalog/index.html` (commit `16ddb448`).
-- **Needs browser verification:** Check homepage ↔ catalog transitions at desktop and mobile widths after GitHub Pages deployment. Do not mark visually resolved until user confirms.
+- **2026-11-25 user verification:** User checked the published site and confirmed the header no longer shifts. Desktop homepage ↔ catalog header issue is resolved and approved. Mobile widths have not been separately confirmed.
 - Previous issue: homepage «Главная»/logo navigation causing header disappearance; verify separately if it recurs.
 
 ## Working protocol for future chats
