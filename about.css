@@ -38,3 +38,6 @@
 .brand-hero{height:220px!important;min-height:220px!important;box-sizing:border-box!important;padding:0!important;display:flex!important;align-items:center!important}
 .brand-hero h1{margin:0!important;font-size:clamp(32px,4vw,48px)!important;line-height:1.2!important}
 @media(max-width:640px){.brand-hero{height:180px!important;min-height:180px!important;padding:0!important}}
+
+/* Official product photo: show the entire GX6000E without cropping. */
+.brand-intro img.brand-radio-photo{object-fit:contain!important;object-position:center!important;background:#f4f6f8!important;padding:18px!important;box-sizing:border-box!important}
