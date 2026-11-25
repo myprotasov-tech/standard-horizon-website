@@ -48,3 +48,6 @@
 .brand-history-photo figcaption{font-size:11px;line-height:1.5;color:#647687;margin-top:8px}
 .brand-history-photo figcaption a{color:#315b79;text-decoration:underline}
 @media(max-width:640px){.brand-intro .brand-history-photo img{height:auto;min-height:190px;max-height:320px}}
+
+/* Compact historical photograph caption. */
+.brand-intro .brand-history-photo figcaption{font-size:10px!important;line-height:1.35!important;margin-top:5px!important;color:#7b8792!important}
