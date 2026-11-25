@@ -44,10 +44,10 @@
 
 /* Historical YAESU image and Creative Commons attribution. */
 .brand-intro .brand-history-photo{margin:0;min-width:0}
-.brand-intro .brand-history-photo img{display:block;width:100%;height:320px;object-fit:cover;object-position:center;background:transparent;border-radius:12px;padding:0;box-sizing:border-box}
+.brand-intro .brand-history-photo img{display:block;width:100%;height:auto;object-fit:contain;object-position:center;background:transparent;border-radius:12px;padding:0;box-sizing:border-box}
 .brand-history-photo figcaption{font-size:11px;line-height:1.5;color:#647687;margin-top:8px}
 .brand-history-photo figcaption a{color:#315b79;text-decoration:underline}
-@media(max-width:640px){.brand-intro .brand-history-photo img{height:auto;min-height:190px;max-height:320px}}
+@media(max-width:640px){.brand-intro .brand-history-photo img{height:auto;min-height:0;max-height:none}}
 
 /* Compact historical photograph caption. */
 .brand-intro .brand-history-photo figcaption{font-size:8px!important;line-height:1.3!important;margin-top:5px!important;color:#7b8792!important}
