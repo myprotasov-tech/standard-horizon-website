@@ -54,3 +54,9 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 3. Make minimal, targeted changes directly in `main` when requested.
 4. Verify changed links/pages and report the commit SHA, files touched, and any unverified behavior.
 5. Update this file when a design decision, structure, or task status changes.
+
+## Technical optimization (2026-11-25)
+- User approved cautious optimization to reduce giant HTML and chat context consumption while preserving approved design.
+- Extracted six contiguous inline CSS blocks from `catalog/index.html` into `catalog/catalog.css` without changing CSS declarations or relative paths (commit `168826a`). Catalog HTML reduced from ~28.9K to ~14.2K characters. Live visual verification remains pending.
+- Homepage `index.html` is ~2.54 MB and `products/HX40E.html` ~309 KB. GitHub `fetch_file` currently returns empty content for homepage; do not rewrite it without retrieving full verified bytes. Prioritize extracting embedded images into assets once safe full-file access is established.
+- Avoid reintroducing header shifts; verify homepage/catalog transitions after stylesheet extraction.
