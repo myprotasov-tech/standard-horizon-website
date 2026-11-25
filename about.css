@@ -56,3 +56,11 @@
 .brand-intro .brand-history-photo{display:block;margin:0!important;min-width:0!important;background:transparent!important;padding:0!important}
 .brand-intro .brand-history-photo img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;min-height:0!important;aspect-ratio:auto!important;object-fit:initial!important;object-position:initial!important;background:none!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 @media(max-width:640px){.brand-intro .brand-history-photo img{height:auto!important;max-height:none!important;min-height:0!important}}
+
+/* Balanced historical introduction: portrait sized to the text column. */
+.brand-intro{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)!important;gap:clamp(28px,4vw,56px)!important;align-items:center!important}
+.brand-intro .brand-history-photo{width:100%!important;max-width:390px!important;justify-self:center!important;margin:0 auto!important}
+.brand-intro .brand-history-photo img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;display:block!important}
+.brand-intro .brand-history-photo figcaption{font-size:9px!important;line-height:1.4!important;margin-top:7px!important;text-align:center!important}
+@media(max-width:850px){.brand-intro{grid-template-columns:1fr!important;gap:28px!important}.brand-intro .brand-history-photo{max-width:390px!important}}
+@media(max-width:480px){.brand-intro .brand-history-photo{max-width:min(100%,340px)!important}}
