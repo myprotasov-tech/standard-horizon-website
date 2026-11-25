@@ -5,3 +5,12 @@
 .brand-hero h1{font-size:clamp(32px,4vw,48px);line-height:1.2;letter-spacing:normal;margin:0;font-weight:700}
 @media(max-width:640px){.brand-hero{height:195px;min-height:0}}
 @media(max-width:560px){.brand-hero{height:165px;min-height:0}}
+
+/* Same compact banner geometry and left-to-right shade as the catalog page. */
+.brand-hero{height:190px;min-height:0;position:relative;isolation:isolate;overflow:hidden;background:#06283e;display:flex;align-items:center}
+.brand-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("assets/images/home-inline-09.webp") center 52%/cover no-repeat}
+.brand-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,28,51,.90) 0%,rgba(0,32,55,.72) 36%,rgba(0,36,60,.12) 77%)}
+.brand-hero-content{padding:0;width:100%}
+.brand-hero h1{text-shadow:0 2px 16px rgba(0,0,0,.3);font-size:clamp(32px,4vw,48px);line-height:1.2;margin:0}
+@media(max-width:640px){.brand-hero{height:170px}.brand-hero::before{background-position:62% center}.brand-hero::after{background:linear-gradient(90deg,rgba(0,28,51,.92),rgba(0,28,51,.48))}}
+@media(max-width:560px){.brand-hero{height:150px}}
