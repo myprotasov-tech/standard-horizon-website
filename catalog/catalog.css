@@ -225,3 +225,7 @@ body{font-style:normal}
 .catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX1400"]{transform:scale(.66)!important}
 .catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX2410GPS/E"]{transform:scale(1.13)!important}
 .catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX6000E"]{transform:scale(.98)!important}
+
+/* Increase GX1400 and GX2410GPS/E apparent size by exactly 10%; GX6000E unchanged. */
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX1400"]{transform:scale(.726)!important}
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX2410GPS/E"]{transform:scale(1.243)!important}
