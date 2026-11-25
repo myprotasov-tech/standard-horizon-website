@@ -220,3 +220,8 @@ body{font-style:normal}
 
 /* Keep GX2410 mid-size when using the official high-resolution photo. */
 .catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX2410GPS/E"]{transform:scale(.82)!important}
+
+/* GX2410 official JPG contains more whitespace: compensate for source framing while preserving image aspect ratio. */
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX1400"]{transform:scale(.66)!important}
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX2410GPS/E"]{transform:scale(1.13)!important}
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[alt="Standard Horizon GX6000E"]{transform:scale(.98)!important}
