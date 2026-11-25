@@ -72,3 +72,5 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 - **2026-11-25 user verification:** HX40E page visually confirmed correct after image extraction, including product photo and header/footer logos. HX40E optimization is complete and approved. Next task awaiting selection.
 
 - **2026-11-25 catalog adjustments:** CSS commit `4f62dab`: standardized fixed-mount radio image frames (GX1400/GX2410GPS/E/GX6000E) and visually reduced GX2410 by 12%; pointer cursor and keyboard focus indication only on functional linked cards (`data-href`, currently HX40E). Other cards remain non-clickable until their product pages exist. User visual verification pending.
+
+- **2026-11-25 fixed-mount catalog follow-up:** User screenshots showed GX2410GPS/E still oversized and title lower despite initial CSS adjustments. Wrapped all three fixed model images in identical `.fixed-photo-frame` containers (HTML commit `505292a`, CSS commit `61931f3`), normalized fixed image height and margins, GX2410 scale .73 vs .90 others. Visual verification pending. Avoid changing header or portable cards.
