@@ -78,3 +78,5 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 - **2026-11-25 fixed catalog follow-up #2:** User screenshot still showed GX2410 title lower and radio larger. Removed GX2410-only `product-photo` class (commit `fb5ff0f`) and set fixed cards to explicit CSS grid rows for category, 245px image, title, description, remaining action (commit `71f7d34`). GX2410 scale .68, others .90. Await visual check; do not claim confirmed.
 
 - **2026-11-25 CSS caching investigation:** User reported no visible change after fixed-card grid and GX2410 scale updates. Verified `catalog/index.html` contains the fixed-photo wrappers and GX2410 class removal. Added version query `catalog.css?v=20261125-5` in HTML to force refreshed stylesheet (commit `7b4a778`). Await user verification; caching is suspected, not proven.
+
+- **2026-11-25 catalog copy:** User confirmed fixed-mount visual correction, then requested exact descriptions for GX1400, GX2410GPS/E and GX6000E. Updated three model descriptions in `catalog/index.html` (commit `48173a4`), retaining user wording. Published verification pending.
