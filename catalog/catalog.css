@@ -161,3 +161,27 @@ body{font-style:normal}
     max-height:220px!important;flex-basis:220px!important;
   }
 }
+
+/* Fixed models: identical layout box, regardless of image class or source dimensions. */
+.catalog-card[data-type="fixed"] .fixed-photo-frame {
+  height:245px;min-height:245px;max-height:245px;
+  flex:0 0 245px;width:100%;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.catalog-card[data-type="fixed"] .fixed-photo-frame img,
+.catalog-card[data-type="fixed"] .fixed-photo-frame img.product-photo {
+  display:block!important;width:100%!important;height:100%!important;
+  min-height:0!important;max-height:100%!important;
+  max-width:100%!important;object-fit:contain!important;
+  object-position:center!important;margin:0!important;
+  flex:0 0 auto!important;transform:scale(.90)!important;
+}
+.catalog-card[data-type="fixed"] .fixed-photo-frame img[src*="GX2410GPSE"] {
+  transform:scale(.73)!important;
+}
+@media(max-width:640px){
+  .catalog-card[data-type="fixed"] .fixed-photo-frame {
+    height:220px;min-height:220px;max-height:220px;flex-basis:220px;
+  }
+}
