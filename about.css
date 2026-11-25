@@ -50,4 +50,4 @@
 @media(max-width:640px){.brand-intro .brand-history-photo img{height:auto;min-height:190px;max-height:320px}}
 
 /* Compact historical photograph caption. */
-.brand-intro .brand-history-photo figcaption{font-size:10px!important;line-height:1.35!important;margin-top:5px!important;color:#7b8792!important}
+.brand-intro .brand-history-photo figcaption{font-size:8px!important;line-height:1.3!important;margin-top:5px!important;color:#7b8792!important}
