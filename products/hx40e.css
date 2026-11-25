@@ -218,3 +218,7 @@ body{font-style:normal}
 .hx-details .hx-acc-info{background:#fafafa;border-top:1px solid #e9e9e9}
 .hx-details .hx-acc-info strong{color:#252525}
 .hx-details .hx-acc-info p{color:#555}
+
+/* Larger SAD-25 adapter photo without affecting other accessory images */
+.hx-details .hx-acc-card:has(img[alt^="SAD-25"]) .hx-acc-photo{padding:5px}
+.hx-details .hx-acc-card:has(img[alt^="SAD-25"]) .hx-acc-photo img{width:100%;height:100%;object-fit:contain;transform:scale(1.18)}
