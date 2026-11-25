@@ -238,3 +238,8 @@ body{font-style:normal}
 .hx-details .hx-acc-info--name-only{display:block;min-height:100px}
 .hx-details .hx-acc-info--name-only p{margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#555}
 .hx-details .hx-acc-card:has(img[alt="Бумажное руководство пользователя HX40E"]) .hx-acc-photo{padding:7px}
+
+/* No part-number placeholder for wrist strap or printed manual */
+.hx-details .hx-acc-info--name-only::before,.hx-details .hx-acc-info--name-only::after{content:none!important;display:none!important}
+.hx-details .hx-acc-info--name-only{display:flex;align-items:flex-start}
+.hx-details .hx-acc-info--name-only p{margin:0!important}
