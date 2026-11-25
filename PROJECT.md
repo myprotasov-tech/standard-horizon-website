@@ -70,3 +70,5 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 - **2026-11-25 HX40E optimization phase 2:** User approved visual/function check after CSS/JS extraction. Extracted three base64 images to `assets/images/hx40e-inline-01.png`, `hx40e-inline-02.jpg`, `hx40e-inline-03.png`; updated `products/HX40E.html` to relative paths (commit `6a67d711`). HTML reduced to ~15.5K characters. User visual verification after image extraction pending.
 
 - **2026-11-25 user verification:** HX40E page visually confirmed correct after image extraction, including product photo and header/footer logos. HX40E optimization is complete and approved. Next task awaiting selection.
+
+- **2026-11-25 catalog adjustments:** CSS commit `4f62dab`: standardized fixed-mount radio image frames (GX1400/GX2410GPS/E/GX6000E) and visually reduced GX2410 by 12%; pointer cursor and keyboard focus indication only on functional linked cards (`data-href`, currently HX40E). Other cards remain non-clickable until their product pages exist. User visual verification pending.
