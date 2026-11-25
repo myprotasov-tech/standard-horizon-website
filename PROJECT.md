@@ -41,8 +41,10 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 - Use regular upright fonts and standard short hyphens in copy where agreed.
 
 ## Current task / needs verification
-- **Reported 2026-11-25:** Clicking «Главная» on the homepage makes the header disappear. The same behavior was reported for the logo link. Inspect actual anchor targets, CSS, and JS; fix without changing the approved design. Do not mark fixed until checked on the published site.
-- Confirm the exact file paths and current deployment state from `main` before edits.
+- **2026-11-25:** User reports header shifts when navigating between homepage and catalog.
+- Catalog header used a separate logo asset and catalog-only geometry overrides. Updated `catalog/index.html` in `main` (commit `ee4ea90`) to use the exact same embedded logo as the homepage and removed catalog-only logo geometry CSS.
+- **Needs browser verification:** Check homepage ↔ catalog transitions at desktop and mobile widths after GitHub Pages deployment. Do not mark visually resolved until user confirms.
+- Previous issue: homepage «Главная»/logo navigation causing header disappearance; verify separately if it recurs.
 
 ## Working protocol for future chats
 1. Read `PROJECT.md` and inspect the current repository tree and relevant files on `main`.
