@@ -68,3 +68,5 @@ Updated: 2026-11-25. This document records approved decisions from project discu
 - **2026-11-25 HX40E optimization phase 1:** Extracted 18 inline style blocks into `products/hx40e.css` and inline tab JavaScript into `products/hx40e.js`, updated `products/HX40E.html` in `main` (HTML commit `a54cfba9`). HTML reduced ~305K to ~278K characters. Four embedded image data URIs remain; live visual/function verification pending. CSS relative paths preserved because stylesheet remains in `products/`.
 
 - **2026-11-25 HX40E optimization phase 2:** User approved visual/function check after CSS/JS extraction. Extracted three base64 images to `assets/images/hx40e-inline-01.png`, `hx40e-inline-02.jpg`, `hx40e-inline-03.png`; updated `products/HX40E.html` to relative paths (commit `6a67d711`). HTML reduced to ~15.5K characters. User visual verification after image extraction pending.
+
+- **2026-11-25 user verification:** HX40E page visually confirmed correct after image extraction, including product photo and header/footer logos. HX40E optimization is complete and approved. Next task awaiting selection.
