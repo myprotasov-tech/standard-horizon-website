@@ -33,3 +33,8 @@
 /* Match Catalog banner's total height, including its subtitle line, without adding text to About. */
 .brand-hero{padding:80px 0 114px!important;height:auto!important}
 @media(max-width:640px){.brand-hero{padding:64px 0 98px!important}}
+
+/* Shared hero dimensions: Catalog and About */
+.brand-hero{height:220px!important;min-height:220px!important;box-sizing:border-box!important;padding:0!important;display:flex!important;align-items:center!important}
+.brand-hero h1{margin:0!important;font-size:clamp(32px,4vw,48px)!important;line-height:1.2!important}
+@media(max-width:640px){.brand-hero{height:180px!important;min-height:180px!important;padding:0!important}}
