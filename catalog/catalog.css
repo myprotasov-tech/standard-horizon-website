@@ -212,3 +212,8 @@ body{font-style:normal}
   .catalog-card[data-type="fixed"] {grid-template-rows:auto 220px auto auto 1fr}
   .catalog-card[data-type="fixed"] .fixed-photo-frame {height:220px!important;max-height:220px!important}
 }
+
+/* Relative apparent dimensions of fixed radios: GX1400 < GX2410 < GX6000. */
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[src*="GX1400"]{transform:scale(.66)!important}
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[src*="GX2410GPSE"]{transform:scale(.82)!important}
+.catalog-card[data-type="fixed"] .fixed-photo-frame > img[src*="GX6000E"]{transform:scale(.98)!important}
