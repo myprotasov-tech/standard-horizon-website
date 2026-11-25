@@ -1,0 +1,196 @@
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#10151c;font:16px/1.45 Arial,Helvetica,sans-serif;background:#fff}a{text-decoration:none;color:inherit}.container{width:min(1200px,calc(100% - 48px));margin:auto}.site-header{background:#fff;position:relative;z-index:10}.header-inner{height:82px;display:flex;align-items:center;gap:34px}.logo,.footer-logo{font-size:29px;line-height:1;font-weight:900;font-style:italic;letter-spacing:-1.3px;white-space:nowrap;border-bottom:3px solid #e93b4c;padding-bottom:3px}.nav{display:flex;gap:34px;align-items:center;margin-left:auto;font-weight:700;font-size:14px}.nav a:hover{color:#ed6511}.dealer-btn,.primary-btn{background:#f36a10;color:#fff;font-weight:800;padding:17px 22px;border-radius:4px;white-space:nowrap;font-size:14px}.dealer-btn:hover,.primary-btn:hover{background:#d94f00}.mobile-menu{display:none}.hero{height:485px;position:relative;background:#03294b;overflow:hidden;color:#fff}.hero-photo{position:absolute;inset:0 0 0 38%;background:url('assets/hero-daytime.png') center center/cover no-repeat}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,#001c35 0%,#002b4bdc 31%,#002a4969 55%,transparent 77%)}.hero-content{position:relative;padding-top:76px}.hero h1{font-size:clamp(42px,5vw,68px);letter-spacing:-2px;line-height:1.05;margin:0 0 22px}.orange-rule{width:86px;height:4px;background:#f36a10}.hero p{font-size:23px;line-height:1.3;font-weight:600;margin:24px 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.outline-btn{border:1px solid #d4e0ea;color:#fff;font-size:14px;font-weight:800;padding:16px 22px;border-radius:4px}.categories{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}.category{background:#092c4c;min-height:250px;border-radius:8px;position:relative;overflow:hidden;color:#fff;display:flex;align-items:center;padding:34px}.category:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#062440 0%,#062440c9 40%,transparent 100%)}.category>div{position:relative;z-index:2}.category h2{font-size:26px;line-height:1.2;margin:0 0 22px}.category img{position:absolute;right:0;top:0;height:100%;width:55%;object-fit:cover}.arrow{background:#f36a10;padding:6px 12px;border-radius:8px;font-size:25px}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:32px 0}.benefits>div{display:flex;align-items:center;gap:15px}.benefits span{font-size:39px;color:#052a45}.benefits strong{font-size:14px}.popular{padding:20px 0 60px}.section-title{font-size:36px;line-height:1.2;margin:0 0 25px}.section-title:after{content:'';display:block;background:#f36a10;width:68px;height:4px;margin-top:13px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid #e8ebee;box-shadow:0 3px 16px #001d3214;border-radius:8px;padding:20px;position:relative;min-height:320px}.product img{width:100%;height:190px;object-fit:contain}.product h3{font-size:20px;margin:8px 0 3px}.product p{font-size:14px;margin:0 0 12px}.product span{position:absolute;bottom:12px;right:17px;font-size:25px;color:#f36a10}.about{background:#06283e;color:#fff;border-radius:8px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;margin-bottom:18px;min-height:285px}.about>img{width:100%;height:100%;object-fit:cover}.about>div{padding:35px 40px}.about p{font-size:18px}.outline-orange{display:inline-block;border:1px solid #f36a10;border-radius:4px;padding:12px 18px;margin-top:10px}.footer{background:#031f35;color:#fff;padding:30px 0 18px}.footer-grid{display:grid;grid-template-columns:1.5fr 1.2fr 1fr 1fr;gap:24px}.footer-logo{font-size:24px;display:inline-block}.footer p,.footer a{font-size:14px;line-height:1.7}.footer h3{font-size:14px;margin:0 0 10px}.footer a{display:block;margin:4px 0}.copyright{border-top:1px solid #ffffff55;padding-top:18px;margin-top:24px;font-size:13px;color:#ccd6de}@media(max-width:950px){.header-inner{flex-wrap:wrap;height:auto;padding:16px 0}.nav{order:3;width:100%;justify-content:center;margin:0}.dealer-btn{margin-left:auto}.hero-photo{left:25%}.products{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.container{width:calc(100% - 30px)}.header-inner{gap:12px}.logo{font-size:21px}.dealer-btn{font-size:11px;padding:12px}.mobile-menu{display:block;margin-left:auto;background:transparent;border:0;font-size:23px}.nav{display:none;flex-direction:column;align-items:flex-start;gap:14px;padding:15px 0}.nav.open{display:flex}.hero{height:520px}.hero-photo{inset:0;background-position:60% center;opacity:.75}.hero-shade{background:linear-gradient(90deg,#001c35ed,#002a4c8a)}.hero-content{padding-top:85px}.hero h1{font-size:46px}.hero p{font-size:20px}.hero-actions a{font-size:12px}.categories,.about{grid-template-columns:1fr}.category{min-height:205px}.benefits{grid-template-columns:repeat(2,1fr)}.benefits span{font-size:27px}.benefits strong{font-size:12px}.products{gap:10px}.product{padding:12px;min-height:285px}.product img{height:150px}.product h3{font-size:16px}.about>img{height:200px}.about>div{padding:25px}.footer-grid{grid-template-columns:1fr 1fr;gap:20px}.footer-logo{font-size:20px}}
+/* Approved homepage updates */
+:root{--brand-red:#ed2535}
+body{font-style:normal}
+.site-header .logo,.footer-logo{font-style:italic} /* Preserve the original wordmark treatment */
+.logo,.footer-logo{border-bottom-color:var(--brand-red)}
+.dealer-btn,.primary-btn{background:var(--brand-red)}
+.dealer-btn:hover,.primary-btn:hover{background:#c61929}
+.nav a:hover{color:var(--brand-red)}
+.hero-content{padding-top:115px;max-width:1200px}
+.hero h1{max-width:620px;font-size:clamp(38px,4.8vw,64px);line-height:1.08;letter-spacing:-1.4px;margin-bottom:22px;font-style:normal}
+.hero p{font-size:clamp(18px,2.2vw,25px);font-weight:500;margin:0 0 32px;max-width:590px}
+.hero .primary-btn{display:inline-block}
+.categories{margin-top:26px}
+.category h2{font-style:normal}
+.arrow{background:var(--brand-red)}
+.benefits{gap:12px;padding:34px 0}
+.benefits>div{gap:12px}
+.benefits strong{font-size:14px;font-weight:650}
+.benefits span{font-size:35px;min-width:42px;text-align:center}
+.section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.catalog-link{color:var(--brand-red);font-weight:700;margin-top:12px}
+.product-image{height:190px;display:flex;align-items:center;justify-content:center;text-align:center}
+.product-image.pending{background:#f3f6f8;border:1px dashed #b9c6ce;border-radius:6px;color:#637787;font-size:15px;font-weight:600}
+.product span{color:var(--brand-red)}
+.section-title:after{background:var(--brand-red)}
+.outline-orange{border-color:var(--brand-red)}
+@media(max-width:640px){.hero-content{padding-top:110px}.hero h1{font-size:41px}.hero p{font-size:20px}.section-heading{flex-direction:column;gap:0}.catalog-link{margin:0 0 20px}.product-image{height:145px}}
+
+/* Approved product photography: equal frames and undistorted originals */
+.product-image{overflow:hidden;background:#fff}
+.product-photo{display:block;max-width:88%;max-height:180px;width:auto;height:auto;object-fit:contain;margin:auto}
+@media(max-width:640px){.product-photo{max-height:137px}}
+
+/* Harmonized product photography, preserving each model's proportions */
+.product-image{height:205px;padding:8px 4px;overflow:hidden}
+.product-image .product-photo{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center}
+@media(max-width:640px){.product-image{height:160px}}
+
+
+/* Full images visible: increase the available frame instead of scaling beyond clipped bounds. */
+.product-image{height:238px;overflow:visible}
+.product-image .product-photo{transform:none!important;object-fit:contain}
+@media(max-width:640px){.product-image{height:185px}}
+
+/* Header typography aligned with the rest of the website */
+.site-header .nav, .site-header .nav a, .site-header .dealer-btn, .site-header .mobile-menu {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-style: normal !important;
+  font-stretch: normal;
+  text-transform: none;
+  letter-spacing: 0 !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  filter: none !important;
+}
+.site-header .nav { font-size: 16px !important; font-weight: 600 !important; gap: 28px; }
+.site-header .nav a { font-size: inherit !important; font-weight: inherit !important; line-height: 1.4; }
+.site-header .dealer-btn { font-size: 15px !important; font-weight: 700 !important; line-height: 1.3; padding: 15px 20px; }
+.site-header .logo img { display: block; max-width: 100%; height: auto; }
+
+
+
+/* Larger static product cards, no zoom effects */
+.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.product{min-height:420px;padding:24px 28px 30px;overflow:hidden;transition:none}
+.product:hover{transform:none;box-shadow:0 3px 16px #001d3214}
+.product-image{height:315px;padding:8px 10px;overflow:hidden;isolation:auto}
+.product-image .product-photo{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;transform:none!important;filter:none!important;transition:none!important}
+.product-image:hover .product-photo,.product:hover .product-photo{transform:none!important;filter:none!important}
+.product h3{font-size:22px;margin-top:12px}
+.product p{font-size:15px}
+@media(max-width:700px){.products{grid-template-columns:1fr;gap:18px}.product{min-height:380px;padding:18px 20px 26px}.product-image{height:285px}}
+
+
+
+/* Restore approved original brand assets */
+.site-header .logo,.footer-logo{display:inline-flex;align-items:center;background:#061b31;border:0!important;padding:9px 11px!important;border-radius:2px;line-height:1}
+.site-header .logo img{display:block;width:240px;max-width:100%;height:auto}
+.footer-logo img{display:block;width:220px;max-width:100%;height:auto}
+.hero-photo{background-image:url("assets/images/home-inline-01.webp")!important;background-position:center center!important;background-size:cover!important;opacity:1!important}
+@media(max-width:640px){.site-header .logo img{width:160px}.footer-logo img{width:190px}.hero-photo{background-position:62% center!important}}
+
+
+
+.site-header .logo,.footer-logo{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;box-shadow:none!important}
+.site-header .logo img{width:250px!important;height:auto!important;display:block}
+.footer-logo img{width:235px!important;height:auto!important;display:block}
+@media(max-width:640px){.site-header .logo img{width:175px!important}.footer-logo img{width:200px!important}}
+
+
+
+/* Clear, high-contrast typography for header navigation and all action buttons. */
+.site-header .nav,
+.site-header .nav a {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  letter-spacing: 0 !important;
+  line-height: 1.35 !important;
+  color: #14283b !important;
+  text-shadow: none !important;
+  -webkit-font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+}
+.site-header .nav a:hover,
+.site-header .nav a:focus-visible {color: #b71e2b !important;}
+.site-header .dealer-btn,
+.hero .primary-btn,
+.hero-actions a,
+.category .arrow,
+.outline-orange {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  letter-spacing: .1px !important;
+  line-height: 1.3 !important;
+  text-shadow: none !important;
+  text-rendering: optimizeLegibility;
+}
+.site-header .dealer-btn,
+.hero .primary-btn {color:#fff !important;}
+.site-header .header-inner {gap:22px;}
+.site-header .nav {gap:26px;}
+@media(max-width:700px){
+  .site-header .nav a {font-size:16px !important;}
+  .site-header .dealer-btn {font-size:13px !important; padding:12px 14px;}
+  .hero .primary-btn {font-size:14px !important;}
+}
+
+
+
+/* Category cards retain the previously approved dark navy design. */
+.categories .category{background:#092c4c;min-height:290px;overflow:hidden;isolation:isolate}
+.categories .category:after{background:linear-gradient(90deg,#062440 0%,#062440 38%,rgba(6,36,64,.35) 63%,transparent 100%);pointer-events:none}
+.categories .category>div{width:55%;position:relative;z-index:3}
+.categories .category img{position:absolute;right:3%;top:5%;height:90%;width:47%;object-fit:contain;object-position:center;background:transparent!important;padding:0!important;filter:drop-shadow(0 8px 10px rgba(0,0,0,.22))}
+@media(max-width:700px){.categories .category{min-height:245px}.categories .category>div{width:58%}.categories .category img{width:44%;right:1%}.categories .category h2{font-size:clamp(18px,4vw,24px)}}
+
+
+
+/* Approved category banner images; remove old product overlays */
+.categories .category{aspect-ratio:16/9;min-height:0!important;padding:0!important;background-repeat:no-repeat!important;overflow:hidden!important;display:block!important}
+.categories .category::after{display:none!important}
+.categories .category:hover{filter:brightness(1.04)}
+@media(max-width:760px){.categories{grid-template-columns:1fr!important}.categories .category{min-height:0!important;aspect-ratio:16/9}}
+
+
+
+.footer .footer-logo{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  background:#fff!important;
+  border:0!important;
+  border-radius:4px!important;
+  padding:12px 14px!important;
+  width:max-content!important;
+  max-width:100%!important;
+}
+.footer .footer-logo img{
+  display:block!important;
+  width:235px!important;
+  max-width:100%!important;
+  height:auto!important;
+  filter:none!important;
+  opacity:1!important;
+}
+
+
+
+/* Approved white Standard Horizon logo directly on dark footer */
+.footer .footer-logo{background:transparent!important;border:0!important;padding:0!important;border-radius:0!important;display:inline-flex!important;align-items:center!important;max-width:100%!important}
+.footer .footer-logo img{display:block!important;width:285px!important;max-width:100%!important;height:auto!important;filter:none!important;opacity:1!important}
+
+
+/* Align footer logo with subtitle; no other layout changes */
+.footer .footer-logo{position:relative!important;left:-6px!important;}
+
+
+
+/* Only the approved About-brand block: compact desktop height and helm photo. */
+@media (min-width:641px){section.about{height:280px!important;min-height:0!important;grid-template-columns:1fr 1fr!important}section.about>img{height:280px!important;min-height:0!important;object-fit:cover!important;object-position:58% 50%!important}section.about>div{padding:24px 34px!important;align-self:center!important}section.about p{font-size:16px!important;line-height:1.45!important;margin:9px 0!important}}
+@media (max-width:640px){section.about{min-height:0!important}section.about>img{height:190px!important;object-fit:cover!important;object-position:55% 45%!important}section.about>div{padding:22px!important}}
+
+
+
+/* Approved about CTA: white outline */
+.about .outline-orange{border-color:#ffffff!important;color:#ffffff!important;}
+
+
+.benefits svg{width:42px;height:42px;min-width:42px;flex:none;display:block}
+@media(max-width:650px){.benefits svg{width:34px;height:34px;min-width:34px}}
