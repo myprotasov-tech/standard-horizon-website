@@ -136,3 +136,28 @@ body{font-style:normal}
 /* Only cards with a real destination should indicate clickability. */
 .catalog-card[data-href]{cursor:pointer}
 .catalog-card[data-href]:focus-visible{outline:3px solid #ed2535;outline-offset:3px}
+
+/* Fixed radio cards: aligned image slots and balanced perceived radio sizes. */
+.catalog-card[data-type="fixed"] > img {
+  display:block!important;
+  width:100%!important;
+  height:245px!important;
+  min-height:245px!important;
+  max-height:245px!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  margin:0 auto!important;
+  flex:0 0 245px!important;
+}
+.catalog-card[data-type="fixed"] > img[src*="GX2410GPSE"] {
+  transform:scale(.72)!important;
+}
+.catalog-card[data-type="fixed"] > img:not([src*="GX2410GPSE"]) {
+  transform:scale(.92)!important;
+}
+@media(max-width:640px){
+  .catalog-card[data-type="fixed"] > img {
+    height:220px!important;min-height:220px!important;
+    max-height:220px!important;flex-basis:220px!important;
+  }
+}
