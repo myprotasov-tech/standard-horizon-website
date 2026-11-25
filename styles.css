@@ -194,3 +194,7 @@ body{font-style:normal}
 
 .benefits svg{width:42px;height:42px;min-width:42px;flex:none;display:block}
 @media(max-width:650px){.benefits svg{width:34px;height:34px;min-width:34px}}
+/* Homepage hero: continuous photograph and smooth navy fade, no hard edge at 38%. */
+.hero .hero-photo{inset:0!important;left:0!important;right:0!important;background-position:65% center!important;background-size:cover!important;opacity:1!important}
+.hero .hero-shade{inset:0!important;background:linear-gradient(90deg,rgba(0,25,47,.97) 0%,rgba(0,30,54,.93) 20%,rgba(0,34,59,.78) 39%,rgba(0,35,59,.45) 58%,rgba(0,35,59,.12) 78%,rgba(0,35,59,0) 100%)!important}
+@media(max-width:640px){.hero .hero-photo{background-position:62% center!important}.hero .hero-shade{background:linear-gradient(90deg,rgba(0,25,47,.94) 0%,rgba(0,31,54,.84) 35%,rgba(0,34,58,.48) 75%,rgba(0,34,58,.22) 100%)!important}}
