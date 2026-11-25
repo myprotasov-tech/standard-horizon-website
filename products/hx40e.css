@@ -233,3 +233,8 @@ body{font-style:normal}
 /* Included items without a manufacturer part number */
 .hx-details .hx-acc-info--name-only{display:flex;align-items:flex-start;min-height:100px}
 .hx-details .hx-acc-info--name-only strong{font-weight:700;font-size:17px;line-height:1.5}
+
+/* Model-free package contents use the same text size and spacing as accessory descriptions */
+.hx-details .hx-acc-info--name-only{display:block;min-height:100px}
+.hx-details .hx-acc-info--name-only p{margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#555}
+.hx-details .hx-acc-card:has(img[alt="Бумажное руководство пользователя HX40E"]) .hx-acc-photo{padding:7px}
