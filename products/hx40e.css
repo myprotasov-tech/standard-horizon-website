@@ -222,3 +222,7 @@ body{font-style:normal}
 /* Larger SAD-25 adapter photo without affecting other accessory images */
 .hx-details .hx-acc-card:has(img[alt^="SAD-25"]) .hx-acc-photo{padding:5px}
 .hx-details .hx-acc-card:has(img[alt^="SAD-25"]) .hx-acc-photo img{width:100%;height:100%;object-fit:contain;transform:scale(1.18)}
+
+/* Wrist strap: hide the photographic background and increase visibility */
+.hx-details .hx-acc-card:has(img[alt="Ремешок на руку"]) .hx-acc-photo{background:#fff!important;padding:6px}
+.hx-details .hx-acc-card:has(img[alt="Ремешок на руку"]) .hx-acc-photo img{width:100%;height:100%;object-fit:contain;filter:grayscale(1) contrast(1.6) brightness(1.1);transform:scale(1.12)}
