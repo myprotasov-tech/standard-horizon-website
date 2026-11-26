@@ -64,3 +64,11 @@
 .brand-intro .brand-history-photo figcaption{font-size:9.9px!important;line-height:1.4!important;margin-top:7px!important;text-align:center!important}
 @media(max-width:850px){.brand-intro{grid-template-columns:1fr!important;gap:28px!important}.brand-intro .brand-history-photo{max-width:390px!important}}
 @media(max-width:480px){.brand-intro .brand-history-photo{max-width:min(100%,340px)!important}}
+
+/* YAESU MUSEN official company history timeline */
+.brand-timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;margin:26px 0 20px}
+.brand-timeline p{font-size:15px;line-height:1.6;margin:0;padding:13px 0;border-bottom:1px solid #dce4ea;max-width:none}
+.brand-timeline p strong:first-child{color:#0b2c48}
+.brand-history-source{font-size:13px!important;color:#657687!important;margin-top:20px}
+.brand-history-source a{color:#245a83;text-decoration:underline}
+@media(max-width:720px){.brand-timeline{grid-template-columns:1fr;gap:0}.brand-timeline p{font-size:14px;padding:11px 0}}
